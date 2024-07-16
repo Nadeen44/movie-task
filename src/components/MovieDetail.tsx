@@ -26,9 +26,9 @@ const MovieDetail: React.FC = () => {
 
   return (
     <div className="container mx-auto mt-8 p-4">
-      <div className="card lg:card-side bg-base-100 shadow-xl">
+      <div className="card lg:card-side bg-base-100 shadow-xl mt-8 p-4 ">
         <figure>
-          <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
+          <img className='rounded-lg' src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
         </figure>
         <div className="card-body">
           <h2 className="card-title text-4xl">{movie.title}</h2>
